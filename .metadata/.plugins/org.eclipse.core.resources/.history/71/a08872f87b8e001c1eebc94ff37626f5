@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="NoSQL" nsURI="f" nsPrefix="d">
+  <eClassifiers xsi:type="ecore:EClass" name="Database"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Collection"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Document"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Value"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Atomic"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Couple"/>
+</ecore:EPackage>

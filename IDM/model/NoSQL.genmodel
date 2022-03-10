@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/TP/src" modelPluginID="TP" modelName="NoSQL" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>NoSQL.ecore</foreignModel>
+  <genPackages prefix="NoSQL" disposableProviderFactory="true" ecorePackage="NoSQL.ecore#/">
+    <genClasses ecoreClass="NoSQL.ecore#//Database">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQL.ecore#//Database/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQL.ecore#//Database/collection"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQL.ecore#//Collection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQL.ecore#//Collection/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQL.ecore#//Collection/document"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQL.ecore#//Document">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQL.ecore#//Document/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NoSQL.ecore#//Document/Couple"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQL.ecore#//Value">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NoSQL.ecore#//Value/CoupleVal"/>
+    </genClasses>
+    <genClasses ecoreClass="NoSQL.ecore#//Atomic"/>
+    <genClasses ecoreClass="NoSQL.ecore#//Couple">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NoSQL.ecore#//Couple/attribut"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NoSQL.ecore#//Couple/value"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
